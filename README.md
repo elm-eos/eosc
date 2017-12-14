@@ -1,0 +1,107 @@
+## TODO
+
+### Options
+
+- [ ] `-h,--help`
+- [ ] `-H,--host`
+- [ ] `-p,--port`
+- [ ] `--wallet-host`
+- [ ] `--wallet-port`
+- [ ] `-v,--verbose`
+
+### Commands
+
+- [ ] `version`
+    - [ ] `client`
+- [ ] `create`
+    - [ ] `key`
+    - [ ] `account [OPTIONS] creator name OwnerKey ActiveKey`
+        - [ ] `-s,--skip-signature`
+        - [ ] `-x,--expiration`
+        - [ ] `-f,--force-unique`
+    - [ ] `producer [OPTIONS] name OwnerKey`
+        - [ ] `-p,--permission`
+        - [ ] `-s,--skip-signature`
+        - [ ] `-x,--expiration`
+        - [ ] `-f,--force-unique`
+- [ ] `get`
+    - [ ] `info`
+    - [ ] `block`
+    - [ ] `account name`
+    - [ ] `code`
+        - [ ] `-c,--code`
+        - [ ] `-a,--abi`
+    - [ ] `table [OPTIONS] scope contract table`
+        - [ ] `-b,--binary`
+        - [ ] `-l,--limit`
+        - [ ] `-k,--key`
+        - [ ] `-L,--lower`
+        - [ ] `-U,--upper`
+    - [ ] `accounts public_key`
+    - [ ] `servants account`
+    - [ ] `transaction id`
+    - [ ] `transactions account_name [skip_seq] [num_seq]`
+- [ ] `set`
+    - [ ] `contract [OPTIONS] account wast-file [abi-file]`
+        - [ ] `-a,--abi`
+        - [ ] `-s,--skip-sign`
+        - [ ] `-x,--expiration`
+        - [ ] `-f,--force-unique`
+    - [ ] `producer [OPTIONS] user-name producer-name SUBCOMMAND`
+        - [ ] `-p,--permission`
+        - [ ] `-s,--skip-signature`
+        - [ ] `-x,--expiration`
+        - [ ] `-f,--force-unique`
+        - [ ] `approve`
+        - [ ] `unapprove`
+    - [ ] `proxy [OPTIONS] user-name [proxy-name]`
+        - [ ] `-p,--permission`
+        - [ ] `-s,--skip-signature`
+        - [ ] `-x,--expiration`
+        - [ ] `-f,--force-unique`
+    - [ ] `account`
+        - [ ] `permission [OPTIONS] account permission authority [parent]`
+            - [ ] `-p,--permission`
+            - [ ] `-s,--skip-signature`
+            - [ ] `-x,--expiration`
+            - [ ] `-f,--force-unique`
+    - [ ] `action`
+        - [ ] `permission [OPTIONS] account code type requirement`
+            - [ ] `-p,--permission`
+            - [ ] `-s,--skip-signature`
+            - [ ] `-x,--expiration`
+            - [ ] `-f,--force-unique`
+- [ ] `transfer [OPTIONS] sender recipient amount [memo]`
+    - [ ] `-s,--skip-signature`
+    - [ ] `-x,--expiration`
+    - [ ] `-f,--force-unique`
+- [ ] `net`
+    - [ ] `connect host`
+    - [ ] `disconnect host`
+    - [ ] `status host`
+    - [ ] `peers`
+- [ ] `wallet`
+    - [ ] `create`
+        - [ ] `-n,--name`
+    - [ ] `open`
+        - [ ] `-n,--name`
+    - [ ] `lock`
+        - [ ] `-n,--name`
+    - [ ] `lock_all`
+    - [ ] `unlock`
+        - [ ] `-n,--name`
+        - [ ] `--password`
+    - [ ] `import [OPTIONS] key`
+        - [ ] `-n,--name`
+    - [ ] `list`
+    - [ ] `keys`
+- [ ] `benchmark`
+- [ ] `push`
+    - [ ] `message [OPTIONS] contract action data`
+        - [ ] `-p,--permission`
+        - [ ] `-s,--skip-signature`
+        - [ ] `-x,--expiration`
+        - [ ] `-f,--force-unique`
+        - [ ] `-S,--scope`
+    - [ ] `transaction transaction`
+    - [ ] `transactions transactions`

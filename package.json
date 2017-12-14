@@ -1,0 +1,24 @@
+{
+  "name": "@elm-eos/eosc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "elm-make Main.elm --yes --warn --output Elm.js",
+    "start": "npm run build && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elm-eos/eosc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elm-eos/eosc/issues"
+  },
+  "homepage": "https://github.com/elm-eos/eosc#readme",
+  "dependencies": {
+    "xhr2": "^0.1.4"
+  }
+}
